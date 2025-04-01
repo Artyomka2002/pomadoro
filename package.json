@@ -1,0 +1,31 @@
+{
+  "name": "web-404sq-pomadoro",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\"",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-essentials": "^8.6.9",
+    "@storybook/addon-onboarding": "^8.6.9",
+    "@storybook/blocks": "^8.6.9",
+    "@storybook/experimental-addon-test": "^8.6.9",
+    "@storybook/nextjs": "^8.6.9",
+    "@storybook/react": "^8.6.9",
+    "@storybook/test": "^8.6.9",
+    "husky": "^9.1.7",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.6.9"
+  },
+  "dependencies": {
+    "next": "^15.2.4"
+  }
+}
