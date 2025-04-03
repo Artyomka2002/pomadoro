@@ -1,17 +1,13 @@
+/* Подключение Tailwind */
 @import "tailwindcss";
 
+/* Определение переменных для светлой темы */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Для темной темы */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +15,33 @@
   }
 }
 
+/* Стили для тела с использованием переменных */
 body {
-  background: var(--foreground);
-  color: var( --background);
+  background: rgb(255, 255, 255);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Для темной темы */
+body.dark {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+
+.buttonSingIn{
+  width: 108px;
+  padding: 0.5rem; /* 8px */
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  border-radius: 0.375rem; /* 6px */
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+body.dark .buttonSingIn {
+  background-color: rgb(253, 253, 253);
+  color: #0a0a0a;
+  border-color: white;
 }
